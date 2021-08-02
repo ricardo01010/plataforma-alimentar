@@ -1,7 +1,7 @@
 {
   "name": "FRONTEND",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desenvolvimento da plataforma",
   "main": "index.js",
   "scripts": {
     "dev": "next dev"
