@@ -6,3 +6,5 @@ function Tempo(){
         {dynamicDate} (dinamico)
     )
 }
+
+export default Tempo
