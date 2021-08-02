@@ -16,11 +16,11 @@ export async function getStaticProps(){
     const staticDate = new Date();
     const staticDateString = staticDate.toGMTString();
     console.log('>>>>>>>>>>>>>>>>>>>>>>>> static');
-    await delay(5000);
     return{
         props: {
             staticDateString
-        }
+        },
+        revalidate: 1
     }
 }
 
