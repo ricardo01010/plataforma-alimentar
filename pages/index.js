@@ -4,8 +4,8 @@ import Link from 'next/link';
 function Home(){
     return <div><h1>Home 1</h1>
         <Contador></Contador>
-        <Link>
-            <a href="/sobre">Página Sobre</a>  
+        <Link href="/sobre">
+            <a>Página Sobre</a>  
         </Link>         
     </div>
 }
