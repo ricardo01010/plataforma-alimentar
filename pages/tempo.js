@@ -3,7 +3,10 @@ function Tempo(){
     const dynamicDateString = dynamicDate.toGMTString();
 
     return(
-        {dynamicDate} (dinamico)
+        <div>
+            {dynamicDate} (dinamico)
+        </div>
+        
     )
 }
 
