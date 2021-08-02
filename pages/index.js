@@ -2,6 +2,7 @@ import {useState} from 'react';
 function Home(){
     return <div><h1>Home 1</h1>
         <Contador></Contador>
+        <a href="/sobre">Página Sobre</a>   
     </div>
 }
 
