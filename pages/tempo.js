@@ -4,7 +4,7 @@ function Tempo(){
 
     return(
         <div>
-            {dynamicDate} (dinamico)
+            {dynamicDateString} (dinamico)
         </div>
         
     )
