@@ -1,9 +1,10 @@
 import {useState} from 'react';
 function Home(){
     return <div><h1>Home 1</h1>
+        <Contador></Contador>
     </div>
 }
-/*
+
 function Contador(){
     const [contador, setContador] = useState(1);
 
@@ -19,5 +20,5 @@ function Contador(){
         </div>
     )
 }
-*/
+
 export default Home
