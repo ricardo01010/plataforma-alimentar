@@ -8,8 +8,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'react-bootstrap/Image';
+import styles from '../public/css/style.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App(){
@@ -50,7 +51,11 @@ function Home(){
 }
 
 function Banner(){
-    return(<Image src="../image/banner-01.jpg" fluid />)
+    return(
+        <div className={styles.bannerDiv}>
+            
+        </div>
+    )
 }
 
 function Contador(){
@@ -61,7 +66,7 @@ function Contador(){
     }
 
     return(
-        <div>
+        <div className="home bannerDiv">
             <div>{contador}</div>
             <button onClick={adicionarContador}>Adicionar</button>
 
