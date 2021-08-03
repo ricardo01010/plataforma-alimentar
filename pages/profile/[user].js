@@ -1,9 +1,14 @@
-function tempo(request, response){
-    const dynamicDate = new Date();
+import Link from 'next/link';
 
-    response.json({
-        date: dynamicDate.toGMTString()
-    })
+function Sobre (){
+    return(
+        <div>
+            <h1>Sobre</h1>
+            <Link href="/">
+                <a>Página Home</a>  
+            </Link>       
+        </div>        
+    )
 }
 
-export default tempo();
+export default Sobre
