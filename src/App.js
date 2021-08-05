@@ -4,6 +4,7 @@ import store from './store';
 
 import Home from './view/home';
 import Login from './view/login';
+import BackofficeTags from './view/backoffice/tags';
 import BackofficeTagsNew from './view/backoffice/tags-new';
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <Router>
         <Route exact path='/' component={Home} />
         <Route exact path='/login' component={Login} />
-        <Route exact path='/backoffice/tags' component={BackofficeTagsNew} />
+        <Route exact path='/backoffice/tags' component={BackofficeTags} />
+        <Route exact path='/backoffice/tagsadd' component={BackofficeTagsNew} />
       </Router>
     </Provider>
   );
