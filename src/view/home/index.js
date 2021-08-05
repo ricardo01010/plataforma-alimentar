@@ -1,10 +1,14 @@
 import NavebarComponent from "../../components/navebar";
+import Image from 'react-bootstrap/Image';
+import './home.css';
 
 function App(){
     return(
         <>
             <NavebarComponent/>
-            <h1>Olá</h1>
+            <div className="bannerDiv">
+            </div>
+            
         </>
         
     )

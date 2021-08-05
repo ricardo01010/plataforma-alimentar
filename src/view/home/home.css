@@ -1,0 +1,7 @@
+.bannerDiv{
+    position: relative;
+    margin: auto;
+    background-image: url('./banner-01.jpg');
+    height: 420px;
+    background-position-y: center;
+}
