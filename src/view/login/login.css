@@ -1,0 +1,19 @@
+.imageDiv{
+    background-image: url('./login-image.jpg');
+    width: calc(100% - 42.1%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.formCol{
+    padding: 10vh;
+}
+.mb-4{
+    margin-top: 100px;
+}
+
+.msg-login span{
+    color: black;
+}
