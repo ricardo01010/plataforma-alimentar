@@ -1,6 +1,6 @@
 import Badge from 'react-bootstrap/Badge'
 import firebase from '../../config/firebase';
-
+import './tags.css';
 /* Bootstrap */
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -34,6 +34,7 @@ function TagsList(){
             
             <div className="App">
                 <Container>
+                    <Row><h1>Tags</h1></Row>   
                     <Row>
                     <Col>
                     {
@@ -41,7 +42,7 @@ function TagsList(){
                     return(
                         <>
                         
-                        <Badge pill bg="dark ml-2">{data.name}</Badge>
+                        <Badge className="ml-2 badgeTags">{data.name}</Badge>
                         
                         </>
                         )
