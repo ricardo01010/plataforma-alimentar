@@ -1,7 +1,9 @@
 .bannerDiv{
-    position: relative;
+    width: 100%;
     margin: auto;
     background-image: url('./banner-01.jpg');
+    background-repeat: no-repeat;
     height: 420px;
     background-position-y: center;
+    margin-top: 40px;
 }

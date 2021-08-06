@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import firebase from "../../../config/firebase";
 
 import NavebarComponent from "../../../components/navebarBackoffice";
+import TagsListComponent from "../../../components/tags-list";
 
 /* Bootstrap */
 import Form from 'react-bootstrap/Form'
@@ -14,28 +15,12 @@ import Col from 'react-bootstrap/Col'
 
 
 function App(){
-    const [tags, setTags] = useState([]);
-    let listaTags =[];
-    useEffect(()=>{
-        firebase.firestore().collection('tags').get().then( async (resultado) => {
-            await resultado.docs.forEach(doc =>{
-                listaTags.push({
-                    id: doc.id,
-                    ... doc.data()
-                })
-            })
-            setTags(listaTags);
-        })
-    });
-
-    const listTags = tags;
     return(
-        <>
-        {listTags.forEach((e)=>{
-           /*e.name*/
-        })}
-        </>
-        
+<>
+        <NavebarComponent/>
+        <br></br><br></br><br></br><br></br><br></br>
+        <TagsListComponent />
+    </>
     )
     
 }
