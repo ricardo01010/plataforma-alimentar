@@ -35,8 +35,8 @@ function App(){
   }
   
   return(
-    <div>
-      <Container fluid>
+    <>
+      <Container fluid role="main">
         <Row>
           <Col className="imageDiv">
           </Col>
@@ -69,8 +69,13 @@ function App(){
           </Col>
         </Row>
       </Container>
+      <footer className="footer">
+        <div className="container">
+          <span className="text-muted">Place sticky footer content here.</span>
+        </div>
+      </footer>
       
-    </div>
+    </>
   )
 }
 
